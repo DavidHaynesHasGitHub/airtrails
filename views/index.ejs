@@ -6,9 +6,13 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfCHqixEYScHO-7Yy6P1svXntfnF7O3RU"></script>
+
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
+
+
   <nav>
     <div class="nav-wrapper">
       <a href="#" class="brand-logo"><%= title %></a>
@@ -18,27 +22,10 @@
 
     <p>Welcome to <%= title %></p>
 
-    <script>
-      var x = document.getElementById("demo");
-      function getLocation() {
-         if (navigator.geolocation) {
-             navigator.geolocation.getCurrentPosition(showPosition);
-         } else {
-             x.innerHTML = "Geolocation is not supported by this browser.";
-         }
-      }
-      function showPosition(position) {
-         x.innerHTML = "Latitude: " + position.coords.latitude +
-         "<br>Longitude: " + position.coords.longitude;
-      }
-    </script>
 
-    <iframe
-      width=500px
-      height=500px
-      frameborder="0" style="border:0"
-      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBfCHqixEYScHO-7Yy6P1svXntfnF7O3RU&q=<%= city %>" allowfullscreen>
-    </iframe>
+
+
+
     <!-- Compiled and minified Materialize JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <!-- Compiled and minified JQuery -->
